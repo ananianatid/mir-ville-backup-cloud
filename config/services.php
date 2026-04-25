@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'backup' => [
+        'api_key' => env('BACKUP_API_KEY'),
+    ],
+
 ];
