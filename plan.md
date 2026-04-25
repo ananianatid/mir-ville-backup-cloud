@@ -256,15 +256,15 @@ it('lists backups ordered by date', function () {
 
 ## Checklist
 
-- [ ] Créer migration `backups`
-- [ ] Créer modèle `Backup` avec factory
-- [ ] Créer middleware `ApiTokenAuth`
-- [ ] Enregistrer middleware dans `bootstrap/app.php`
-- [ ] Créer contrôleur `BackupController`
-- [ ] Créer fichier de routes `routes/api.php`
-- [ ] Ajouter config `config/services.backup`
+- [x] Créer migration `backups`
+- [x] Créer modèle `Backup` avec factory
+- [x] Créer middleware `ApiTokenAuth`
+- [x] Enregistrer middleware dans `bootstrap/app.php` (routing API + alias `api.token`)
+- [x] Créer contrôleur `BackupController`
+- [x] Créer fichier de routes `routes/api.php`
+- [x] Ajouter config `config/services.backup`
 - [ ] Générer API key et ajouter au `.env`
-- [ ] Écrire tests Pest
+- [x] Écrire tests Pest
 - [ ] Faire un test manuel avec Postman/curl
 
 ---

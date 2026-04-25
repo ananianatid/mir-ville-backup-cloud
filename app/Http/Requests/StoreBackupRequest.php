@@ -24,7 +24,8 @@ class StoreBackupRequest extends FormRequest
     {
         return [
             'device_id' => ['required', 'string', 'max:255'],
-            'file' => ['required', 'file', 'max:10240', 'mimes:db,sqlite'],
+            // React Native uploads are commonly sent as `application/octet-stream`.
+            'file' => ['required', 'file', 'max:10240', 'mimetypes:application/octet-stream,application/x-sqlite3,application/vnd.sqlite3'],
         ];
     }
 }

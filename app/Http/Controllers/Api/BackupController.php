@@ -82,6 +82,9 @@ class BackupController extends Controller
             return response()->json(['error' => 'File not found'], 404);
         }
 
-        return Storage::disk('local')->download($path, $backup->filename);
+        return response()->download(
+            Storage::disk('local')->path($path),
+            $backup->filename
+        );
     }
 }
