@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('backups', function (Blueprint $table) {
             $table->id();
+            $table->string('device_id')->index();
+            $table->string('filename');
+            $table->unsignedBigInteger('size');
+            $table->string('checksum')->nullable();
             $table->timestamps();
         });
     }
